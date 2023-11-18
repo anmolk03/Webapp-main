@@ -27,8 +27,8 @@
     z-index: 2;
     color: #fff;
     cursor: default;
-    background-color: #196edd;
-    border-color: #196edd ;
+    background-color: #db7093;
+    border-color: #db7093 ;
 }
 
 .page-item.disabled .page-link,
@@ -46,7 +46,7 @@
     float: left;
     padding: 0.5rem 0.75rem;
     margin-left: -1px;
-    color: #5cb85c;
+    color: #9370db;
     text-decoration: none;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -58,4 +58,22 @@
     color: #3d8b3d;
     background-color: #eceeef;
     border-color: #ddd;
+}
+
+.download-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #db7093;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.download-button:hover {
+  background-color: #db7093;
+}
+
+.download-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
 }

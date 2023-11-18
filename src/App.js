@@ -114,10 +114,10 @@ function App() {
             <textarea
               required={true}
               value={inputText}
-              placeholder='Enter the prompt to generate image for the page ...  '
+              placeholder='Enter the prompt to generate image'
               className="block w-11/12 h-[10rem] p-2  m-2 text-sm text-gray-900 border-2 
               outline-none border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 
-              focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 
+              focus:border-blue-500 dark:bg-custom-blue dark:border-gray-600 
               dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 
               dark:focus:border-blue-500"
               onChange={(e) => setInputText(e.target.value)}
@@ -126,15 +126,15 @@ function App() {
             {/* Prompt Button Group  */}
             <div className='flex justify-around mt-2'>
                 <button onClick={handleQuery}
-                  className='text-white w-32 bg-blue-700 hover:bg-blue-800 
+                  className='text-white w-32 bg-customPink hover:bg-blue-800 
                   focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm 
-                  px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
-                >Fetch Image
+                  px-4 py-2 dark:bg-customPink dark:hover:bg-customPink dark:focus:ring-blue-800'
+                >Generate
                 </button>
                 <button onClick={() => setSubmitBtn(!submitBtn)}
-                  className="text-white w-32 bg-blue-700 hover:bg-blue-800 
+                  className="text-white w-32 bg-customPink hover:bg-blue-800 
                   focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm 
-                  px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  px-4 py-2 dark:bg-customPink dark:hover:bg-customPink dark:focus:ring-blue-800"
                   >
                     {
                       submitBtn ? 'Hide Preview' : 'See Preview'
@@ -156,19 +156,19 @@ function App() {
 
               <textarea
                 value={textValue}
-                placeholder='Enter the text to show over image ... '
+                placeholder='Add Speech Bubble'
                 onChange={(e) => setTextValue(e.target.value)}
                 className={`mt-2 block w-full h-[10rem] p-1 text-sm text-gray-900 border-2 
                   outline-none border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 
-                  focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 
+                  focus:border-blue-500 dark:bg-custom-blue dark:border-gray-600 
                   dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 
                   dark:focus:border-blue-500 ${!isTextEnabled && 'opacity-50 cursor-not-allowed'}`}
                 disabled={!isTextEnabled}
               />
               <button
-                className='mt-3 text-white w-32 bg-blue-700 hover:bg-blue-800 
+                className='mt-3 text-white w-32 bg-customPink hover:bg-blue-800 
                 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm 
-                px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
+                px-4 py-2 dark:bg-customPink dark:hover:bg-customPink dark:focus:ring-blue-800'
                 onClick={handleText}
               >Enter Text
               </button>
