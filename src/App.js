@@ -118,7 +118,7 @@ function App() {
               className="block w-11/12 h-[10rem] p-2  m-2 text-sm text-gray-900 border-2 
               outline-none border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 
               focus:border-blue-500 dark:bg-custom-blue dark:border-gray-600 
-              dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 
+              dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 
               dark:focus:border-blue-500"
               onChange={(e) => setInputText(e.target.value)}
             />
@@ -161,17 +161,20 @@ function App() {
                 className={`mt-2 block w-full h-[10rem] p-1 text-sm text-gray-900 border-2 
                   outline-none border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 
                   focus:border-blue-500 dark:bg-custom-blue dark:border-gray-600 
-                  dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 
+                  dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 
                   dark:focus:border-blue-500 ${!isTextEnabled && 'opacity-50 cursor-not-allowed'}`}
                 disabled={!isTextEnabled}
               />
-              <button
-                className='mt-3 text-white w-32 bg-customPink hover:bg-blue-800 
-                focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm 
-                px-4 py-2 dark:bg-customPink dark:hover:bg-customPink dark:focus:ring-blue-800'
-                onClick={handleText}
-              >Enter Text
-              </button>
+   <div className="flex justify-center">
+  <button
+    className="mt-3 text-white w-32 bg-customPink hover:bg-blue-800 
+    focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm 
+    px-4 py-2 dark:bg-customPink dark:hover:bg-customPink dark:focus:ring-blue-800 relative"
+    onClick={handleText}
+  >
+    Enter Text
+  </button>
+</div>
             </div>
             
           </div>
